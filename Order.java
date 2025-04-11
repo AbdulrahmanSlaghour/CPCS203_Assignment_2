@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Order {
     //***PROPERTIES***
     
@@ -20,5 +22,13 @@ public class Order {
         return orderId;
     }
     
-    public 
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public Customer getCustomer() {
+        return this.customer;
+    }
+
+    public
 }
