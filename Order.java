@@ -63,7 +63,7 @@ public class Order {
         if (this.customer instanceof GoldenMember) {
             //since the discountRate is a percentage of sale, multiply discountRate and
             //deliveryCost to get the discount amount, then subtract it from the deliveryCost
-            this.deliveryCost = deliveryCost - (this.customer.getDiscountRate() * deliveryCost);
+            this.deliveryCost = deliveryCost - (((GoldenMember) this.customer).getDiscountRate() * deliveryCost);
             
         } else {
             this.deliveryCost = deliveryCost;
