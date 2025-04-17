@@ -1,4 +1,4 @@
-public class Customer extends Person {
+public abstract class Customer extends Person {
     //***PROPERTIES***
     //all properties inherited from Person
     
