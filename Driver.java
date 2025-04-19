@@ -29,7 +29,12 @@ public class Driver extends Person implements Deliverable {
         this.vehicleType = vehicleType;
     }
     
-    public double calculateEarnings(double base, double distance) {
-        //Calculates hte driver's earnings based on a base fee and a per-distance charge
-    }
+    
+    //A clarification email was sent telling all students to disregard calculateEarnings() and NOT TO USE IT OR REFER TO IT in implementation.
+    //public double calculateEarnings(double base, double distance) {
+        //Documentation specifies that this method: "Calculates the driver's earnings based on a base fee and a per-distance charge"
+        //but a clarification email was sent to all students which details: "driver earnings = sum of delivery costs of all orders completed by that driver."
+        //But since there is no way to obtain order details in Driver, this method was commented out and will not be used
+        //in accordance with the clarification email sent to all CPCS203 students.
+    //}
 }
