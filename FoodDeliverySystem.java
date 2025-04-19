@@ -36,4 +36,53 @@ public class FoodDeliverySystem {
     }
 
     //**RESTAURANT AND MENU MANAGEMENT**
+			public String addRestaurant(int restaurantId, String name, String address) {
+							//documentation states that this method does the following:
+							//1- Creates a Restaurant object and adds it to the restaurants list
+							//2- Returns a confirmation message
+			}
+
+			public String addMenuItem(int restaurantId, String menuItem) {
+							//documentation states that this method does the following:
+							//1- Searches for a restaurant by its restaurantId and adds a menu item to it.
+							//2- Returns a message indicating whether the item was successfully added or if the restaurantId was not found.
+			}
+
+			//**ORDER MANAGEMENT**
+			public String createOrder(Customer customer, int restaurantId, String[] items, double deliveryCost) {
+							//documentation states that this method does the following:
+							//1- Finds the specified restaurant and creates a new Order object.
+							//2- Adds food items to the order and sets the delivery cost (applying a discount if the customer is a GoldenMember).
+							//3- Adds the order to the orders list and returns a success message.
+			}
+
+			public String assignDeliverer(int orderId, Deliverable deliverer) {
+							//documentation states that this method does the following:
+							//1- Searches for an order by orderId and assigns a deliverer.
+							//2- Checks if the deliverer exists in the system before assigning.
+							//3- Returns a message confirming the assignment.
+			}
+			
+			//**REPORTING**
+			public String printOrdersByDeliverer(Deliverable deliverer) {
+							//documentation states that this method does the following:
+							//1- Prints all orders assigned to a specific deliverer (either a Driver or a Drone).
+							//2- Formats the output in a structured way.
+							//3- Returns a message if no orders are found.
+			}
+
+			public String getTotalCostByDeliverer(int delivererId) {
+							//documentation states that this method does the following:
+							//1- Calculates the total earnings from deliveries made by a specific deliverer.
+							//2- Returns a formatted message indicating the total amount.
+			}
+
+			public String printOrdersByCustomer(int customerId) {
+							//documentation states that this method does the following:
+							//1- Finds all orders placed by a specific customer.
+							//2- Displays order details, including restaurant name, delivery cost, items, and assigned deliverer.
+							//3- Returns a message if no orders are found.
+			}
+
+			//**HELPER METHODS**
 }
