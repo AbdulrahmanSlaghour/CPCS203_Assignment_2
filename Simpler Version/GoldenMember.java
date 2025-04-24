@@ -33,3 +33,4 @@ public class GoldenMember extends Customer {
         this.discountRate = discountRate;
     }
 }
+
