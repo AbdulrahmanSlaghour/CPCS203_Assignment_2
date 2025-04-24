@@ -11,3 +11,4 @@ public abstract class Customer extends Person {
         super(id, name, phoneNumber);
     }
 }
+
