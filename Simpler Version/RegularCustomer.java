@@ -12,3 +12,4 @@ public class RegularCustomer extends Customer {
         super(id, name, phoneNumber);
     }
 }
+
